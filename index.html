@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Tailwind</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    
+    <section class="w-[90%] mx-auto max-w-screen-lg overflow-hidden text-white rounded-lg mt-20 slider" id="slider">
+        
+        <figure class="relative w-full h-full aspect-video slider-childs" >
+
+            <img src="./assets/img1.jpg" class="w-full h-full block object-cover">
+
+
+            <div class="absolute inset-0 w-[90%] mx-auto h-max mt-auto space-y-4 py-8 hidden md:block">
+
+                <h2 class="text-3xl font-bold">Imagen 1:</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi corrupti vitae odit, dolorem amet laborum enim minus? Sint, quos reprehenderit.</p>
+
+            </div>
+
+        </figure>
+
+        <figure class="relative w-full h-full aspect-video slider-childs">
+
+            <img src="./assets/img2.jpg" class="w-full h-full block object-cover">
+
+
+            <div class="absolute inset-0 w-[90%] mx-auto h-max mt-auto space-y-4 py-8 hidden md:block">
+
+                <h2 class="text-3xl font-bold">Imagen 2:</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi corrupti vitae odit, dolorem amet laborum enim minus? Sint, quos reprehenderit.</p>
+
+            </div>
+
+        </figure>
+        
+        <figure class="relative w-full h-full aspect-video slider-childs" data-active>
+
+            <img src="./assets/img3.jpg" class="w-full h-full block object-cover">
+
+
+            <div class="absolute inset-0 w-[90%] mx-auto h-max mt-auto space-y-4 py-8 hidden md:block">
+
+                <h2 class="text-3xl font-bold">Imagen 3:</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi corrupti vitae odit, dolorem amet laborum enim minus? Sint, quos reprehenderit.</p>
+
+            </div>
+
+        </figure>
+
+        <button class="slider-prev bg-white rounded-full ml-4" data-button="prev">
+            <img src="./assets/prev.svg" class="w-8 aspect-square md:w-12">
+        </button>
+
+        <button class="slider-next bg-white rounded-full mr-4" data-button="next">
+            <img src="./assets/next.svg" class="w-8 aspect-square md:w-12">
+        </button>
+
+    </section>
+
+
+    <script src="./js/slider.js" defer></script>
+</body>
+</html>
